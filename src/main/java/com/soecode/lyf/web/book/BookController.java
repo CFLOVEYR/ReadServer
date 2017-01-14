@@ -1,9 +1,10 @@
-package com.soecode.lyf.web;
+package com.soecode.lyf.web.book;
 
 import java.util.List;
 
 import com.google.gson.Gson;
 import com.soecode.lyf.utils.GsonUtil;
+import com.soecode.lyf.web.BaseController;
 import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,9 +23,7 @@ import com.soecode.lyf.service.BookService;
 
 @Controller
 @RequestMapping("/") // url:/模块/资源/{id}/细分 /seckill/list
-public class BookController {
-
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
+public class BookController extends BaseController {
 
     @Autowired
     private BookService bookService;

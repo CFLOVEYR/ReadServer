@@ -15,10 +15,10 @@ public class BookDaoTest extends BaseTest {
 
     @Test
     public void testInsertBook() throws Exception {
-        long bookId = 1008;
-        String bookName = "杨哲的故事";
-        int Number = 30;
-        int insertBook = bookDao.insertBook(bookId, bookName, Number);
+        long bookId = 1009;
+        String bookName = "杨哲的故事会";
+        int bookNumber = 30;
+        int insertBook = bookDao.insertBook(bookId, bookName, bookNumber);
         System.out.printf("插入：" + (insertBook == 1 ? "成功" : "失败"));
     }
 
